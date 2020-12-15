@@ -1,0 +1,131 @@
+
+.signUp-page {
+    min-height: 100vh;
+    background-color: var(--color-bg03);
+
+    overflow: hidden;
+}
+
+.signup-container {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 4rem;
+    min-height: 90vh;
+}
+
+.text-field h1 {
+    color: var(--color-font02);
+    font-size: 6rem;
+}
+
+.text-field p {
+    font-size: 2rem;
+    width: 40rem;
+}
+
+.form-field form {
+    text-align: center;
+    animation-duration: 800ms;
+    animation-name: slidein;
+
+    
+  }
+
+/* ANIMATION START*/
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+/* ANIMATION END */
+
+.form-field form input,
+.form-field form button {
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    display: block;
+    margin: 1rem;
+    padding: 2rem;
+    width: 40rem;
+}
+
+.form-field form button {
+    background-color: var(--color-font01);
+    font-size: 1.4rem;
+    font-weight: bold;
+    outline: none;
+    color: var(--color-bg);
+    transform: scale(0.9);
+    transition: all 400ms;
+}
+
+.form-field form button:hover {
+    transform: scale(1.0);
+
+}
+
+.back-link {
+    padding: 4rem 0 0 2rem;
+}
+
+.back-link a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: var(--color-font03);
+}
+
+.back-link a svg {
+    color: var(--color-font02);
+}
+
+@media(max-width:814px){
+    .signup-container {
+        display: block;
+    }
+
+    .text-field {
+        text-align: center;
+    }
+
+    .text-field p {
+        margin: auto;
+    }
+
+    .form-field {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
+
+@media(max-width:400px) {
+    .form-field form input,
+    .form-field form button {
+        width: 34rem;    
+    }
+
+    .text-field p {
+        width: 34rem;
+    }
+}
+
+@media(max-width:370px) {
+    .form-field form input,
+    .form-field form button {
+        width: 30rem;    
+    }
+
+    .text-field p {
+        width: 30rem;
+    }
+}

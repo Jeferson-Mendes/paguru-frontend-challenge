@@ -1,0 +1,103 @@
+
+.users-container {
+    min-height: 100vh;
+
+    background-color: var(--color-bg);
+    padding-top: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.field-users {
+    width: 80rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.backToFeed {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.arrowLeft-icon {
+    color: var(--color-font02);
+}
+
+.backToFeed span {
+    color: var(--color-black);
+}
+
+.tot-users {
+    text-align: end;
+    display: inline-block;
+    width: 100%;
+    padding-right: 6rem;
+    font-size: 1.2rem;
+    color: var(--color-font03);
+}
+
+.tot-users i {
+    color: var(--color-font01);
+    font-weight: bold;
+}
+
+.field-users div ul li {
+    list-style: none;
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    transform: scale(0.9);
+    transition: all 400ms;
+}
+
+.field-users div ul li:hover {
+    transform: scale(1.0);
+    border-radius: 4rem;
+}
+
+.field-users div ul li a {
+    text-decoration: none;
+}
+
+.field-users div ul li a figure {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--color-bg02);
+    border-radius: 50%;
+}
+
+.field-users div ul li a h4 {
+    font-size: 2rem;
+    color: var(--color-font03);
+}
+
+.more-users {
+    margin-top: 1rem;
+    background-color: var(--color-font03);
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+
+    transition: all 400ms;
+}
+
+.more-users:hover {
+    opacity: 0.6;
+}
+
+.more-users h1 {
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: normal;
+
+    color: var(--color-bg);
+    font-weight: normal;
+}

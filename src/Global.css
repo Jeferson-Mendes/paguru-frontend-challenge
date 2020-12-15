@@ -1,0 +1,40 @@
+
+:root {
+    font-size: 60%;
+
+    --color-bg: #f4f3f3;
+    --color-bg02: #321f28;
+    --color-bg03: #dfdfdf;
+    --color-font01: #f0a500;
+    --color-font02: #cf7500;
+    --color-font03: #6e6d6d;
+    --color-black: #1a1c20;
+
+}
+
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+/* UTILS */
+
+.mt1r {
+    margin-top: 1rem;
+}
+
+.mt2r {
+    margin-top: 2rem;
+}
+
+.pt8r {
+    padding-top: 8rem;
+}
+
+.padding8r {
+    padding: 8rem;
+}

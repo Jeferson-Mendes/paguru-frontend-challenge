@@ -1,0 +1,161 @@
+
+.post-container {
+    width: 100%;
+    min-height: 10rem;
+    background-color: white;
+    margin-top: 1.4rem;
+    border-radius: 1.4rem;
+    transform: scale(0.9);
+    transition: all 400ms;
+}
+
+.post-container:hover {
+    transform: scale(1.0);
+    border-radius: 4rem;
+}
+
+.user-info {
+    text-align: start;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info div figure {
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.user-info div h4 {
+    font-size: 2rem;    
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 1.4rem;
+}
+
+.post-actions ul li{
+    float: left;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.post-actions ul li svg {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.post-actions .trash-icon {
+    color: darkred;
+}
+
+.post-actions .edit-icon {
+    color: lightgreen;
+}
+
+.post-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.post-info p {
+    font-size: 1.8rem;
+    color: var(--color-font03);
+}
+
+.post-info .other-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.post-info .other-info span {
+    
+    display: inline-block;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    
+}
+
+.edited {
+    color: green;
+}
+
+.date {
+    color: var(--color-font03);
+}
+
+/* MODAL */
+
+.edit-post-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.x-icon {
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+    color: tomato;
+    cursor: pointer;
+}
+
+.edit-post form textarea {
+    width: 60rem;
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 4rem;
+}
+
+.edit-post form button {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: var(--color-font02);
+    font-size: 2rem;
+    color: var(--color-bg);
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 4rem;
+    transform: scale(0.9);
+    transition: all 400ms;
+}
+
+.edit-post form button:hover {
+    transform: scale(1.0);
+}
+
+@media (max-width:600px) {
+    .edit-post form textarea {
+        width: 50rem;
+    }   
+}
+
+@media (max-width:490px) {
+    .edit-post form textarea {
+        width: 40rem;
+    }   
+}
+
+@media (max-width:400px) {
+    .edit-post form textarea {
+        width: 30rem;
+        height: 10rem;
+    }   
+}

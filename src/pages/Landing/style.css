@@ -1,0 +1,84 @@
+
+/* WE NAV */
+
+.landing {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* MAIN HEADER */
+
+.landing-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-img {
+    width: 100%;
+}
+
+.landing-container .header-field {
+    text-align: left;
+    padding-left: 4rem;
+}
+
+
+.landing-container .header-field h1 {
+    font-size: 4.4rem;
+    color: var(--color-font03);
+}
+
+.landing-container .desc p {
+    font-size: 2rem;
+}
+
+.landing-container .button {
+    border: none;
+    width: 18rem;
+    background-color: var(--color-font01);
+    border-radius: 4rem;
+    text-align: center;
+    padding: 1.4rem;
+    transition: all 400ms;
+}
+
+.landing-container .button a {
+    text-decoration: none;
+    color: var(--color-bg);
+    font-size: 1.4rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+.landing-container .button:hover,
+.landing-container .button:active {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.landing-container .header-field span a{
+    text-decoration: none;
+    color: var(--color-font03);
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+@media(max-width: 990px) {
+    .landing-img img {
+        display: none;
+    }
+
+    .landing-container .header-field {
+        width: 60rem;
+    }
+}

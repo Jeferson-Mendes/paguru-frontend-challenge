@@ -1,0 +1,65 @@
+
+.user-detail-container {
+    min-height: 100vh;
+
+    background-color: var(--color-bg);
+    padding-top: 10rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.user-detail-field {
+    width: 80rem;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.user-info-field {
+    background-color: var(--color-font02);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    transform: scale(0.9);
+    transition: all 400ms;
+}
+
+.user-info-field:hover,
+.user-info-field:active {
+    transform: scale(1.0);
+}
+
+.user-info-field figure {
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.user-info-field h2 {
+    color: var(--color-black);
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.user-info-field span {
+    display: inline-block;
+    color: var(--color-bg02);
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+
+.no-post-field {
+    padding: 4rem;
+}
+
+.no-post-field p {
+    font-size: 2rem;
+    color: var(--color-font03);
+}
+
+.no-post-field p i {
+    color: var(--color-font02);
+    font-weight: bold;
+}

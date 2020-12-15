@@ -1,0 +1,50 @@
+
+.field-signin {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-bg02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.field-signin form h1 {
+    font-size: 4.4rem;
+    color: var(--color-font03);
+    font-weight: normal;
+    margin-bottom: 8rem;
+}
+
+.field-signin form input {
+    display: block;
+    border: none;
+    height: 4.4rem;
+    width: 36rem;
+    margin-top: 1.4rem;
+    border-radius: 4rem;
+    padding: 2rem;
+    outline: none;
+    font-size: 1.4rem;
+    background-color: rgba(white, white, white, 0.6);
+}
+
+.field-signin form button {
+    width: 50%;
+    border: none;
+    background-color: var(--color-font01);
+    margin-top: 2rem;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 4rem;
+    color: var(--color-bg);
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 400ms;
+}
+
+.field-signin form button:hover {
+    transform: scale(1.1);
+}

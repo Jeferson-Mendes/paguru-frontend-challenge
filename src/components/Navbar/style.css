@@ -1,0 +1,87 @@
+
+.menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-bg);
+    padding: 1.4rem;
+    z-index: 2;
+}
+
+.menu .logo {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu .logo img {
+    width: 4rem;
+}
+.menu .logo h4 {
+    font-size: 1.2rem;
+    color: var(--color-font02);
+}
+
+.menu ul {
+    display: block;
+}
+
+.menu ul li {
+    list-style: none;
+    float: left;
+    padding: 0 2rem 0 2rem;
+    
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+
+    color: var(--color-black);
+    font-weight: bold;
+    transition: all 400ms;
+}
+
+
+.menu ul li a:hover {
+    color: var(--color-font02);
+}
+
+
+/* Rules for menu hamburguer */
+
+.menu-hamburguer {
+    display: block;
+}
+
+.menu-hamburguer .logo {
+    display: block;
+}
+
+.menu-hamburguer ul li {
+    padding: 2rem 0 0 2rem;
+    float: none;
+    
+}
+
+.icons-hamburguer {
+    display: none;
+}
+
+@media(max-width:480px){
+    .icons-hamburguer {
+        display: block;
+        position: absolute;
+        right: 4rem;
+        font-size: 3rem;
+        color: var(--color-font02);
+    }
+
+    .menu ul {
+        display: none;
+    }
+}
